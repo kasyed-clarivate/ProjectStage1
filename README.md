@@ -21,8 +21,8 @@ TASK EXPLANATION:
 
 TASK 1 : To implement the remaining two scenarios tagged as @wip...
  
-  => In test/resources, two feature files (search.feature and searchAPI.feature) has been implemented for this task. They have been implemented
-  through Page Object Model. All the Page Objects are at location src/main/java/com.stage1.test/pages
+  => In test/resources, two feature files (search.feature and searchAPI.feature) has been implemented for this task. 
+  They have been implemented through Page Object Model. All the Page Objects are at location src/main/java/com.stage1.test/pages
 
 
 TASK 2 : To write and implement a few more BDD scenarios for UI and API tests to demonstrate candidates understanding of what scenarios are best for UI and what scenarios are best for API tests...
