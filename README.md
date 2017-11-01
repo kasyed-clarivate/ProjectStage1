@@ -2,7 +2,7 @@
 RUN OPTIONS:
 
 1- It can be run with both chrome and firefox driver by giving following command. 
-Note: Both drivers for Mac & Windows are provided at src/main/resources/drivers. At the moment path for both drivers are set for Mac in pom.xml
+Note: Both drivers for Mac & Windows are provided at src/main/resources/drivers. At the moment path for both drivers is set for Mac in pom.xml
  (i) Run tests with chrome. It can be chaned to 'firefox' 
    > mvn clean install -DdriverType=chrome
  
@@ -21,7 +21,8 @@ TASK EXPLANATION:
 
 TASK 1 : To implement the remaining two scenarios tagged as @wip...
  
-  => In test/resources, two feature files (search.feature and searchAPI.feature) has been implemented for this task. They have been implemented through Page Object Model. All the Page Objects are at location src/main/java/com.stage1.test/pages
+  => In test/resources, two feature files (search.feature and searchAPI.feature) has been implemented for this task.
+  - They have been implemented through Page Object Model. All the Page Objects are at location src/main/java/com.stage1.test/pages
 
 
 TASK 2 : To write and implement a few more BDD scenarios for UI and API tests to demonstrate candidates understanding of what scenarios are best for UI and what scenarios are best for API tests...
