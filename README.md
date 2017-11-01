@@ -16,16 +16,22 @@ Note: Both drivers for Mac & Windows are provided at src/main/resources/drivers.
  
  (ii) Also you can run either All, GUI or API tests by mentioning in Cucumber Options
    > mvn clean install -DdriverType=chrome
+   
    or
+   
    > mvn clean install -DdriverType=chrome -Dcucumber.options=""--tags=@ui"
+  
    or
+   
    > mvn clean install -DdriverType=chrome -Dcucumber.options=""--tags=@api"
 
 REPORTING :   
  - To produce Allure reports, please run the site command or you can run the "site" with previous command together
  Note: You can open the allure reports by opening "allure-maven-plugin.html" file in target/site/ folder.
    > mvn site
+   
    or
+   
    > mvn clean install -DdriverType=firefox site
    
 TASK EXPLANATION:
