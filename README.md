@@ -7,6 +7,7 @@ PROJECT CONFIGURATION :
       3- Rest-assured  3.0.5
       4- Selenium 3.5.3
       5- Allure Reports 2.5
+      6- slf4j-api 1.7.6
 
 RUN OPTIONS:
 
