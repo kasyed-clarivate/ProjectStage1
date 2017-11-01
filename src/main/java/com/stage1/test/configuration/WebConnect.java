@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class WebConnect {
 
-    private final static org.slf4j.Logger LOG= org.slf4j.LoggerFactory.getLogger("driver");
+    private final static org.slf4j.Logger LOG= org.slf4j.LoggerFactory.getLogger("WebConnect");
 
     @Value("${driverType}")
     private String driverType;

@@ -26,6 +26,7 @@ TASK 1 : To implement the remaining two scenarios tagged as @wip...
 
 
 TASK 2 : To write and implement a few more BDD scenarios for UI and API tests to demonstrate candidates understanding of what scenarios are best for UI and what scenarios are best for API tests...
+ 
   => As mentioned above, two feature files (search.feature and searchAPI.feature) has been implemented, one for GUI and other for API.
     
     GUI feature has all the tests related to front end verfication, like 
@@ -41,7 +42,8 @@ TASK 2 : To write and implement a few more BDD scenarios for UI and API tests to
     Note : GUI tests should always look/check for presence of DOM elements (like textboxes, images, labelels, buttons etc) as expected
     whereas API tests are necessary to run when on some event(click, doubleClick, submit etc), the underpinning web-service has been invoked  
        
-TASK 3 : Good to have but not required: How to run the tests in parallel, with batch strategy, etc
+TASK 3 : Good to have but not required: How to run the tests in parallel, with batch strategy, etc.
+   
     => To run the tests in parallel, there should be couple of steps needs to be taken in design
      
       1- Add following configuration settings in Maven Surefire plugin
@@ -52,6 +54,7 @@ TASK 3 : Good to have but not required: How to run the tests in parallel, with b
       2- Add each Runner file for each feature file so it can be run parallel
       
 TASK 4 : Any other improvements / suggestions.
+ 
    =>  Following are couple of suggestions
    
        1- Good to introduce some configuration for Selenium Grid for cross browser testing
