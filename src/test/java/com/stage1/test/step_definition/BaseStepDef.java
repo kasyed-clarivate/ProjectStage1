@@ -17,7 +17,7 @@ public class BaseStepDef {
     @Autowired
     protected WebConnect webConnect;
 
-    protected static boolean isApiTest=false;
+  //  protected static boolean isApiTest=false;
 
     protected Response response;
     protected ValidatableResponse validatableResponse;
@@ -35,6 +35,7 @@ public class BaseStepDef {
     }
 
     protected void apiSetup(){
+        WebConnect.isApiTest=true;
         RestAssured.baseURI=baseURL;
     }
     protected void apiSetSearchBasePath(){

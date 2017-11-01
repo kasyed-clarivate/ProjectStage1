@@ -16,15 +16,10 @@
     <selenium_version>3.5.3</selenium_version>
     <spring_version>4.2.2.RELEASE</spring_version>
     <driverType>chrome</driverType>
-    <reportBuilder>false</reportBuilder>
-    <baseTest>yahoo</baseTest>
     <project.build.directory>${basedir}/target</project.build.directory>
     <chromeDriverPath>${basedir}/src/main/resources/drivers/chromedriver</chromeDriverPath>
     <geckoDriverPath>${basedir}/src/main/resources/drivers/geckodriver</geckoDriverPath>
-    <ieDriverPath>${basedir}\src\main\resources\drivers\IEDriverServer.exe</ieDriverPath>
-    <allure.version>1.5.2</allure.version>
     <aspectj.version>1.8.4</aspectj.version>
-
   </properties>
    <build>
     <plugins>
@@ -46,11 +41,8 @@
           <testFailureIgnore>false</testFailureIgnore>
           <systemPropertyVariables>
             <driverType>${driverType}</driverType>
-            <baseTest>${baseTest}</baseTest>
             <webdriver.chrome.driver>${chromeDriverPath}</webdriver.chrome.driver>
-            <webdriver.ie.driver>${ieDriverPath}</webdriver.ie.driver>
             <webdriver.gecko.driver>${geckoDriverPath}</webdriver.gecko.driver>
-            <reportBuilder>${reportBuilder}</reportBuilder>
           </systemPropertyVariables>
           <testFailureIgnore>false</testFailureIgnore>
           <argLine>
@@ -95,11 +87,13 @@
       <artifactId>allure-cucumber-jvm-adaptor</artifactId>
       <version>1.6.2</version>
     </dependency>
+
     <dependency>
       <groupId>ru.yandex.qatools.allure</groupId>
       <artifactId>allure-maven-plugin</artifactId>
       <version>2.5</version>
     </dependency>
+
     <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
     <dependency>
       <groupId>io.rest-assured</groupId>

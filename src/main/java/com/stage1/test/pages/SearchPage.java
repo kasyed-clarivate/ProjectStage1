@@ -1,10 +1,8 @@
 package com.stage1.test.pages;
 
-import com.stage1.test.configuration.ActionsPage;
 import com.stage1.test.configuration.WaitPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;

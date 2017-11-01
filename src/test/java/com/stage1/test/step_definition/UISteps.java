@@ -13,9 +13,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsString;
 
 
-public class CommonSteps extends BaseStepDef{
+public class UISteps extends BaseStepDef{
 
-    private final static org.slf4j.Logger LOG= org.slf4j.LoggerFactory.getLogger("CommonSteps");
+    private final static org.slf4j.Logger LOG= org.slf4j.LoggerFactory.getLogger("UISteps");
 
     @Autowired
     SearchPage searchPage;
@@ -43,7 +43,6 @@ public class CommonSteps extends BaseStepDef{
     @When("^he searches for a product from the input box$")
     public void he_searches_for_a_product_from_the_input_box() throws Throwable {
        LOG.info("he searches for the text "+searchText+" a product from the input box");
-
        searchPage.inputTextBox().sendKeys(searchText);
        searchPage.inputButtonBox().submit();
     }
@@ -51,10 +50,10 @@ public class CommonSteps extends BaseStepDef{
     @Then("^the result should be displayed$")
     public void the_result_should_be_displayed() throws Throwable {
        LOG.info("the result should be displayed");
-
        assertThat(searchPage.topCategoriesHeader().getText(), containsString(searchText));
        assertThat(searchPage.allCategoriesHeader().getText(), containsString(searchText));
     }
+
     @When("^he chooses clothing and dresses from drop-down menu$")
     public void he_chooses_clothing() throws Throwable {
         LOG.info("he chooses clothing and dresses from drop-down menu");
@@ -65,9 +64,7 @@ public class CommonSteps extends BaseStepDef{
     @Then("^the breadcrumb for \"(.*)\" should be displayed$")
     public void the_breadcrumb_for_dresses_should_be_displayed(String item) throws Throwable {
         LOG.info("the breadcrumb for dresses should be displayed");
-
         assertThat(dressPage.breadcrumbDressPage().getText(), containsString(item));
-       // assertThat(searchPage.allCategoriesHeader().getText(), containsString(searchText));
     }
 
     @When("^he clicks on first popular product icon$")
@@ -84,7 +81,6 @@ public class CommonSteps extends BaseStepDef{
         String actualProdDesc=productPage.productListingDescription().getText().trim();
         System.out.println("actualProductDes :"+actualProdDesc);
         assertThat(actualProdDesc, containsString(productText));
-        // assertThat(searchPage.allCategoriesHeader().getText(), containsString(searchText));
     }
 
 

@@ -15,16 +15,18 @@ public class WebConnect {
     @Value("${driverType}")
     private String driverType;
 
-    private static RemoteWebDriver driver;
+    public static RemoteWebDriver driver;
+    public static boolean isApiTest=false;
+
 
     public WebDriver getDriver(){
-        LOG.info("In GetDriver");
        try {
            if (driver == null) {
                if (driverType.equalsIgnoreCase("firefox")) {
                    LOG.info("Firefox Driver is being initialized....!");
                    driver = new FirefoxDriver();
                } else if (driverType.equalsIgnoreCase("chrome")) {
+                   LOG.info("Chrome Driver is being initialized....!");
                    driver = new ChromeDriver();
                } else {
                    LOG.error("No Driver Found..!");
@@ -40,10 +42,21 @@ public class WebConnect {
     }
 
 
+    public boolean isDriverOpen(){
+       if(driver!=null) {
+         return true;
+       }else{
+           return false;
+       }
+    }
+
+   public void quitDriver(){
+        driver.quit();
+   }
 
     public void closeSetup(){
-        if(getDriver()!=null){
-            getDriver().quit();
+        if(driver!=null){
+            quitDriver();
         }
     }
 
