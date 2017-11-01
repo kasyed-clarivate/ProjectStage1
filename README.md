@@ -1,6 +1,6 @@
 
 PROJECT CONFIGURATION :
-      The Porject has been developed With following Java dependencies/tools
+     - The Porject has been developed With following Java dependencies/tools
       1- Cucumber-JVM 1.2.5
       2- Spring-Framework 4.2.2.RELEASE
       3- Rest-assured  3.0.5
