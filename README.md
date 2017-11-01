@@ -1,11 +1,13 @@
 
 PROJECT CONFIGURATION :
-      The Porject has been developed With following Java dependencies/tools
+    
+    - The Porject has been developed With following Java dependencies/tools
       1- Cucumber-JVM 1.2.5
       2- Spring-Framework 4.2.2.RELEASE
       3- Rest-assured  3.0.5
       4- Selenium 3.5.3
       5- Allure Reports 2.5
+      6- slf4j-api 1.7.6
 
 RUN OPTIONS:
 
