@@ -23,11 +23,11 @@ Note: Both drivers for Mac & Windows are provided at src/main/resources/drivers.
    
    or
    
-   > mvn clean install -DdriverType=chrome -Dcucumber.options=""--tags @ui"
+   > mvn clean install -DdriverType=chrome -Dcucumber.options="--tags @ui"
   
    or
    
-   > mvn clean install -DdriverType=chrome -Dcucumber.options=""--tags @api"
+   > mvn clean install -DdriverType=chrome -Dcucumber.options="--tags @api"
 
 REPORTING :   
 
